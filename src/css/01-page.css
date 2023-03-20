@@ -1,0 +1,54 @@
+body {
+    background: none;
+  }
+
+.btn-color-swstcher {
+    width: 100px;
+    height: 40px;
+    color: black;
+    margin: 20px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      inset -7px -7px 10px 0px rgba(0, 0, 0, 0.1),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-4 {
+    color: #0dbc27;
+    border: 1px solid#0dbc27;
+    box-shadow: 0 0 5px #0dbc27, 0 0 5px #0dbc27 inset;
+    z-index: 1;
+  }
+  .btn-4:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #0dbc27;
+    box-shadow: 0 0 20px #0dbc27;
+    transition: all 0.3s ease;
+  }
+  .btn-4:hover {
+    color: black;
+  }
+  .btn-4:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-4:active {
+    top: 2px;
+  }
+
+  .list-btn {
+    display: flex;
+    justify-content: center;
+  }

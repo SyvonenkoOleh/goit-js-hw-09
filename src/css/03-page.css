@@ -1,0 +1,67 @@
+body {
+    background: url(../img/img3.jpg) center / cover no-repeat;
+  }
+
+.btn-6 {
+    color: #b7ff00;
+    border: 1px solid#b7ff00;
+    box-shadow: 0 0 5px #b7ff00, 0 0 5px #b7ff00 inset;
+    z-index: 1;
+  }
+  .btn-6:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #b7ff00;
+    box-shadow: 0 0 20px #b7ff00;
+    transition: all 0.3s ease;
+  }
+  .btn-6:hover {
+    color: rgb(0, 0, 0);
+  }
+  .btn-6:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-6:active {
+    top: 2px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 25px 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid rgb(9, 9, 9);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color: white;
+    font-size: large;
+    font-weight: 700;
+  }
+  
+  .form button {
+    padding: 5px 10px;
+    font: inherit;
+    cursor: pointer;
+    border: 2px solid black;
+    font-size: large;
+    font-weight: 700;
+  }
+  
+  .form input {
+    padding: 8px 12px;
+    border: 2px black;
+    outline: none;
+  }

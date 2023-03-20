@@ -1,0 +1,123 @@
+body {
+    background: url(../img/img2.jpg) center / cover no-repeat;
+  }
+.btn-5 {
+    color: #ff9aff;
+    border: 1px solid#ff9aff;
+    box-shadow: 0 0 5px #ff9aff, 0 0 5px #ff9aff inset;
+    z-index: 1;
+  }
+  .btn-5:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #ff9aff;
+    box-shadow: 0 0 20px #ff9aff;
+    transition: all 0.3s ease;
+  }
+  .btn-5:hover {
+    color: black;
+  }
+  .btn-5:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-5:active {
+    top: 2px;
+  }
+
+  .timer-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+  }
+  
+  .picker {
+    margin-bottom: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+    border: 2px solid #000000;
+    background-color: #ff9721;
+    outline: none;
+    font-weight: 700;
+  }
+  
+  .picker:disabled {
+    border: 2px solid #ff9721;
+    background-color: #ff9aff;
+    outline: none;
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    flex-direction: row;
+  }
+  
+  .field {
+    background-color: #ffffff;
+    border: #000000 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    font-size: x-large;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 140px;
+    height: 140px;
+  }
+  
+  .value {
+    color: #000000;
+    font-weight: 700;
+    font-size: 50px;
+  }
+  
+  .value.end {
+    color: #ff9721;
+  }
+  
+  .label {
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .btn-start {
+    width: 140px;
+    height: 50px;
+    background-color: #00ff1e;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 1px 1px rgba(76, 86, 106, 0.2);
+    cursor: pointer;
+    font-size: large;
+    font-weight: 700;
+  }
+  
+  .btn-start:disabled {
+    background-color: #ff9aff;
+    border: 2px solid #000000;
+    color: black;
+    box-shadow: none;
+  }
+  
+  .btn-reload {
+    width: 180px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 700;
+  }

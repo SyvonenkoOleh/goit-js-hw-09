@@ -5,12 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown timer</title>
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/02-page.css" />
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
+    <p>
+      <a href="index.html"
+        ><button class="go-back-btn custom-btn btn-5" type="button">
+          <span>Go back</span>
+        </button></a
+      >
+    </p>
 
-    <input type="text" id="datetime-picker" />
-    <button type="button" data-start>Start</button>
+    <div class="timer-wrap">
+      <input class="picker" type="text" id="datetime-picker" />
+      <button class="btn-start" type="button" data-start>Start</button>
+      <button
+        class="btn-reload"
+        value="Refresh Page"
+        onClick="window.location.href=window.location.href"
+      >
+        RELOAD PAGE
+      </button>
+    </div>
 
     <div class="timer">
       <div class="field">
